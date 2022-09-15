@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,16 +9,35 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.27.0/dist/full.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
     <!---------------- header start -------------->
-    <header>
+    <header class="container">
+        <!--------------- navbar start  ------------->
         <div class="navbar bg-base-100">
             <div class="navbar-start">
-              <div class="dropdown">
-                <label tabindex="0" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </label>
-                <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>Course</a></li>
+                        <li><a>Deals</a></li>
+                        <li><a>Success</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Register</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost normal-case text-xl">Self Learn</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal p-0">
                     <li><a>Home</a></li>
                     <li><a>Course</a></li>
                     <li><a>Deals</a></li>
@@ -25,24 +45,103 @@
                     <li><a>About</a></li>
                     <li><a>Register</a></li>
                 </ul>
-              </div>
-              <a class="btn btn-ghost normal-case text-xl">Self Learn</a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal p-0">
-                <li><a>Home</a></li>
-                <li><a>Course</a></li>
-                <li><a>Deals</a></li>
-                <li><a>Success</a></li>
-                <li><a>About</a></li>
-                <li><a>Register</a></li>
-              </ul>
             </div>
             <div class="navbar-end">
-              <a class="btn btn-info">Register</a>
+                <a class="btn btn-info">Register</a>
             </div>
-          </div>
+        </div>
+        <!------------- navbar end -------------->
+        <!------------ carousel start  -------------->
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+                <img src="/images/cover/cover-1.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="/images/cover/cover-2.jpg" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="/images/cover/cover-3.jpg" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+        <!------------ carousel end  -------------->
     </header>
     <!---------------- header end -------------->
+    <!------------------ main section start  ---------------------->
+    <main class=" pt-20">
+        <section class="container pl-10">
+            <div class="w-2/4 mx-auto">
+                <h1 class="text-4xl text-center">Discover Our Popular <br> Course</h1>
+                <p class="text-1xl text-center">it is a long established fact that a readable will be distracted by the
+                    readable content of a page when looking at last course</p>
+            </div>
+            <div class="grid md:grid-cols-1 lg:grid-cols-2">
+                <div class="card md:card-side lg:card-side bg-base-100 shadow-xl pt-2">
+                    <figure><img src="./images/course/course-1.png" alt="Movie" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title pt-2">Fundamental Of UI/UX Design</h2>
+                        <p>You Can Enroll This Course I hope You Are Achiabe a must UI/UX Design</p>
+                        <p class="pt-1 text-info text-bold text-xl">Price : 20 $</p>
+                    </div>
+                </div>
+                <div class="card md:card-side lg:card-side bg-base-100 shadow-xl pt-2">
+                    <figure><img src="./images/course/course-2.png" alt="Movie" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title pt-2">Javascript Basic to advanced </h2>
+                        <p>You Can Enroll This Course I hope You Are Achiabe a must Javascript fundamental Ida</p>
+                        <p class="pt-1 text-info text-bold text-xl">Price : 20 $</p>
+                    </div>
+                </div>
+                <div class="card md:card-side lg:card-side bg-base-100 shadow-xl pt-2">
+                    <figure><img src="./images/course/course-3.png" alt="Movie" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title pt-2">Fullstack Web Development </h2>
+                        <p>You Can Enroll This Course I hope You Are Achiabe a must Fullstack fundamental Ida</p>
+                        <p class="pt-1 text-info text-bold text-xl">Price : 20 $</p>
+                    </div>
+                </div>
+                <div class="card md:card-side lg:card-side bg-base-100 shadow-xl pt-2">
+                    <figure><img src="./images/course/course-4.png" alt="Movie" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title pt-2">Digital Marketing</h2>
+                        <p>You Can Enroll This Course I hope You Are Achiabe a must Digital fundamental Ida</p>
+                        <p class="pt-1 text-info text-bold text-xl">Price : 20 $</p>
+                    </div>
+                </div>
+                <div class="card md:card-side lg:card-side bg-base-100 shadow-xl pt-2">
+                    <figure><img src="./images/course/course-5.png" alt="Movie" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title pt-2">Photography Basic Rules</h2>
+                        <p>You Can Enroll This Course I hope You Are Achiabe a must Digital fundamental Ida</p>
+                        <p class="pt-1 text-info text-bold text-xl">Price : 20 $</p>
+                    </div>
+                </div>
+                <div class="card md:card-side lg:card-side bg-base-100 shadow-xl pt-2">
+                    <figure><img src="./images/course/course-6.png" alt="Movie" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title pt-2">Motion Graphics</h2>
+                        <p>You Can Enroll This Course I hope You Are Achiabe a must Digital fundamental Ida</p>
+                        <p class="pt-1 text-info text-bold text-xl">Price : 20 $</p>
+                    </div>
+                </div>
+                <div class="w-1/4 mx-auto pt-10 ml-34">
+                    <button class=" p-3 bg-info text-center">See More Course</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!------------------ main section end  ---------------------->
 </body>
+
 </html>
